@@ -1,0 +1,51 @@
+/* App.css */
+
+/* Navbar container */
+.app-header {
+  width: 100%;
+  background-color: #f6f9f3; /* light greenish background */
+  padding: 15px 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Navbar flex layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left side nav links */
+.nav-left {
+  display: flex;
+  gap: 25px;
+}
+
+/* Nav link styling */
+.nav-link {
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #558b2f;
+}
+
+/* Right side plant icon */
+.nav-right .plant-icon {
+  font-size: 2rem;
+  color: #2e7d32;
+}
+
+/* Main content area */
+.app-main {
+  padding: 30px;
+  background-color: #f6f9f3;
+  min-height: calc(100vh - 70px); /* adjust for header height */
+}
