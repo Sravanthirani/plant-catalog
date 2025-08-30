@@ -14,7 +14,7 @@ const PlantList = ({ searchQuery, categoryFilter, sortOption }) => {
 
       try {
         // Build URL
-        let url = `http://localhost:5000/api/plants?search=${searchQuery || ""}`;
+        let url = `https://plant-catalog-1.onrender.com/api/plants?search=${searchQuery || ""}`;
         if (categoryFilter && categoryFilter.length > 0) {
           url += `&category=${categoryFilter.join(",")}`;
         }
